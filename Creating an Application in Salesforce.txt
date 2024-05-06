@@ -1,0 +1,27 @@
+//Creating an Application in SalesForce.com using Apex programming Language
+
+public class practice {
+    public static void main(){
+        system.debug('first salesforce program');
+    }
+    public static void demo(integer k){
+        System.debug('Linear Search');
+        integer s = -1;
+        List<integer>arr = new List<integer>();
+        arr.add(0);
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        System.debug('Given List : '+arr);
+        for(integer i=0;i<arr.size();i++){
+            if(k==arr[i]){
+                s=1;
+            }
+        }
+        if(s==1){
+            System.debug('Number Found');
+        }else{
+            System.debug('Element Not Found');
+        }
+    }
+}
